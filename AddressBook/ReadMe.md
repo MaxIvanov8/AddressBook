@@ -1,4 +1,4 @@
-# Html parser
+# Address book
 This repo contains .NET6 project of address book.<br /><br />
 ![alt text](Screenshot.JPG)<br />
 You can adding contact by "Add contact", saving in XML-file and openning books, deleting and editing contacts by mouse right click.<br /><br />
