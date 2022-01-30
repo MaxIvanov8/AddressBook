@@ -6,7 +6,7 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:command="http://www.galasoft.ch/mvvmlight"
-        mc:Ignorable="d" SizeToContent="WidthAndHeight" DataContext="{Binding AddContact, Source={StaticResource Locator}}">
+        mc:Ignorable="d" SizeToContent="WidthAndHeight" ResizeMode="NoResize" DataContext="{Binding AddContact, Source={StaticResource Locator}}">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Closing">
             <command:EventToCommand Command="{Binding ClosingCommand}"/>
