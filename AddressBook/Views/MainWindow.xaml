@@ -27,11 +27,11 @@
             </MenuItem>
             <MenuItem Header="Add contact" Command="{Binding AddContactCommand}"/>
         </Menu>
-        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="26,0,0,0">
-            <TextBox Text="{Binding AddressBook.FilterSurname, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
-            <TextBox Text="{Binding AddressBook.FilterName, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
-            <TextBox Text="{Binding AddressBook.FilterSecondName, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
-            <xctk:MaskedTextBox Mask="+7-000-000-00-00" Text="{Binding AddressBook.FilterPhoneNumber, UpdateSourceTrigger=PropertyChanged}" Width="111"/>
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="26,0,0,0" Height="24">
+            <xctk:WatermarkTextBox Watermark="Filter surname" Text="{Binding AddressBook.FilterSurname, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
+            <xctk:WatermarkTextBox Watermark="Filter name" Text="{Binding AddressBook.FilterName, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
+            <xctk:WatermarkTextBox Watermark="Filter second name" Text="{Binding AddressBook.FilterSecondName, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
+            <xctk:MaskedTextBox Mask="+7-000-000-00-00" Text="{Binding AddressBook.FilterPhoneNumber, UpdateSourceTrigger=PropertyChanged}" Width="111" VerticalContentAlignment="Center"/>
         </StackPanel>
         <DataGrid Grid.Row="3" Grid.Column="1" ItemsSource="{Binding AddressBook.FilteredCollection}" IsReadOnly="True" AutoGenerateColumns="False" HeadersVisibility="Column" SelectionMode="Single" SelectionUnit="FullRow">
             <DataGrid.Resources>
