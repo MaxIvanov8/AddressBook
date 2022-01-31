@@ -1,7 +1,11 @@
 # Address book
 This repo contains .NET6 project of address book.<br /><br />
 ![alt text](Screenshot.JPG)<br />
-You can adding contact by "Add contact", saving in XML-file and openning books, deleting and editing contacts by mouse right click.<br /><br />
+User can:<br />
+-adding contact;<br />
+-saving in XML-file and openning books;<br />
+-deleting and editing contacts by mouse right click;<br />
+-filtering contacts by fields.<br /><br />
 
 If you added incorrect data (surname and name must be at least 2 and not more than 50 characters, phone number must be filled), this contact will be highlighted. 
 
